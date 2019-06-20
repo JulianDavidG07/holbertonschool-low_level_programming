@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main - lastdigit
@@ -12,9 +10,9 @@ char alphabet;
 alphabet = 'a';
 while (alphabet <= 'z')
 {
-putchar ('alphabet');
+putchar (alphabet);
+putchar ('\n');
 alphabet++;
 }
-putchar ('\n');
 return (0);
 }
