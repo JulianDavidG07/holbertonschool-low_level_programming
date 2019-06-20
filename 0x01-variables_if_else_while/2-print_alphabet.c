@@ -12,7 +12,8 @@ char alphabet;
 alphabet = 'a';
 while (alphabet <= 'z')
 {
-putchar (alphabet\n);
+putchar (alphabet);
+putchar ('\n');
 alphabet++;
 }
 return (0);
