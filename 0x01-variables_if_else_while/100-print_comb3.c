@@ -1,29 +1,26 @@
 #include <stdio.h>
 /**
- * main - number00-99
- * Return: Returns 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  int digit1;
-  int digit2;
-  digit1 = '0';
-  digit2 = '0';
-  while (digit1 <= '9')
-    {
-   
-	  putchar(digit1);
-	  putchar(digit2);
-	  if (digit1 != '9' || digit2 != '9')
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
-	  digit2++;
-	}
-      digit2 = '0';
-      digit1++;
-    }
-  putchar('\n');
+int numero1, numero2;
+
+for (numero1 = 48; numero1 <= 57; numero1++)
+{
+for (numero2 = 48; numero2 <= 57 ; numero2++)
+{
+putchar (numero1);
+putchar (numero2);
+if (numero1 != 57 || numero2 != 57)
+{
+putchar (44);
+putchar (' ');
+}
+}
+}
+putchar ('\n');
 return (0);
 }
