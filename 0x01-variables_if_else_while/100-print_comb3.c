@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - combination
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 int numero1, numero2;
-
 for (numero1 = 48; numero1 <= 57; numero1++)
 {
 for (numero2 = 48; numero2 <= 57 ; numero2++)
