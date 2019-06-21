@@ -1,29 +1,26 @@
 #include <stdio.h>
 /**
- * main - number00-99
- * Return: Returns 0
+ * main - main block
+ * Description: Print0_99.
+ * Return: 0
  */
 int main(void)
 {
-int digit1;
-int digit2;
-digit1 = '0';
-digit2 = '0';
-while (digit1 <= '9')
+int number;
+int b;
+int c;
+
+for (number = 0; number < 100; number++)
 {
-while (digit2 <= '9')
-{
-putchar(digit1);
-putchar(digit2);
-if (digit1 != '9' || digit2 != '9')
+b = number / 10;
+c = number % 10;
+putchar(b + '0');
+putchar(c + '0');
+if (number < 99)
 {
 putchar(',');
 putchar(' ');
 }
-digit2++;
-}
-digit2 = '0';
-digit1++;
 }
 putchar('\n');
 return (0);
