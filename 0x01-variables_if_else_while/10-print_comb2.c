@@ -1,20 +1,29 @@
 #include <stdio.h>
 /**
- * main - number0-99
- * Return: 0
+ * main - number00-99
+ * Return: Returns 0
  */
 int main(void)
 {
-int i = 0;
-while (i < 10)
+int digit1;
+int digit2;
+digit1 = '0';
+digit2 = '0';
+while (digit1 <= '9')
 {
-putchar(i + '0');
-if (i < 9)
+while (digit2 <= '9')
 {
-putchar(44);
-putchar(32);
+putchar(digit1);
+putchar(digit2);
+if (digit1 != '9' || digit2 != '9')
+{
+putchar(',');
+putchar(' ');
 }
-i++;
+digit2++;
+}
+digit2 = '0';
+digit1++;
 }
 putchar('\n');
 return (0);
