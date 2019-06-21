@@ -1,25 +1,28 @@
 #include <stdio.h>
 /**
  * main - combination
- *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
-int numero1, numero2;
-for (numero1 = 48; numero1 <= 57; numero1++)
+int num1, num2, num3, num4;
+for (num1 = 0; num1 < 1000; num1++)
 {
-for (numero2 = 48; numero2 <= 57 ; numero2++)
+num2 = num1 / 100;
+num3 = (num1 / 10) % 10; 
+num4 = num1 % 10; 
+if (num2 < num3 && num3 < num4)
 {
-putchar (numero1);
-putchar (numero2);
-if (numero1 != 57 || numero2 != 57)
+putchar(num2 + '0');
+putchar(num3 + '0');
+putchar(num4 + '0');
+if (num1 < 700)
 {
-putchar (44);
-putchar (' ');
+putchar(',');
+putchar(' ');
 }
 }
 }
-putchar ('\n');
+putchar('\n');
 return (0);
 }
