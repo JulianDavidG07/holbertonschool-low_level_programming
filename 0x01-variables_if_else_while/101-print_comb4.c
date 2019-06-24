@@ -14,7 +14,7 @@ for (number2 = 48; number2 <= 57; number2++)
 {
 for (number3 = 48; number3 <= 57; number3++)
 {
-if ((number1 < number2) && (number2 < number3) && (number3 < number1))
+if ((number1 < number2) && (number2 < number3) && (number1 < number3))
 {
 putchar (number1);
 putchar (number2);
