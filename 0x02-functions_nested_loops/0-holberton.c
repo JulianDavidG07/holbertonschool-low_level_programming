@@ -1,9 +1,8 @@
 #include "holberton.h"
-
 /**
- * main - putchar
- *
- * Return: Always 0 (Success)
+ * _putchar - program that prints Holberton, followed by a new line.
+ * @0 - check
+ * Return - 0
  */
 int main(void)
 {
