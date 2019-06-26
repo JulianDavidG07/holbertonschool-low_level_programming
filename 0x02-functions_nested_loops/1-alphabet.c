@@ -1,18 +1,17 @@
 #include "holberton.h"
 /**
  * print_alphabet - alphabet list
- * @lt: variable
  * Return 10
  */
 
 void print_alphabet(void)
 {
-	char lt = 'a';
+	int lt = 'a';
 
 	while (lt <= 'z')
-	{
+
 		_putchar(lt);
 		lt++;
-	}
+
 	_putchar('\n');
 }
