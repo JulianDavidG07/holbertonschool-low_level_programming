@@ -1,10 +1,9 @@
 #include "holberton.h"
-/*
- * print_alphabet: print all alphabet
- *
- *
+/**
+ * print_alphabet - alphabet list
+ * @letter: variable
+ * Return: chars
  */
-
 void print_alphabet(void)
 {
 int letter;
