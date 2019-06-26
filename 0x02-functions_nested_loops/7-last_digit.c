@@ -1,23 +1,16 @@
 #include "holberton.h"
 /**
- * print_last_digit - prints last digit
- *
- * @dig: variable
- *
- * Return: the value of last digit
+ * print_last_digit - prints the last digit of a number
+ * @num: number
+ * Return: ult
  */
-
-int print_last_digit(int dig)
+int print_last_digit(int num)
 {
-	int num;
+	int ult;
 
-	num = dig % 10;
-
-	if (dig < 0)
-
-		num *= -1;
-
-	_putchar('0' + num);
-
-	return (num);
+	ult = num % 10;
+	if (ult < 0)
+		ult *= -1;
+	_putchar(ult + '0');
+	return (ult);
 }
