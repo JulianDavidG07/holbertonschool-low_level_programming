@@ -3,7 +3,8 @@
 /**
  * add - last digit
  *
- * @nume1 @nume2: Variable
+ *@nume1: variable 1
+ *@nume2: Variable 2
  *
  * Return: sum interger
  */
