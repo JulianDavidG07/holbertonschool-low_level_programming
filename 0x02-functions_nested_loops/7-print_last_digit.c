@@ -1,18 +1,20 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * print_last_digit - last digit number
  * Return: num
- * @dig: variable
+ * @num: variable
  */
-int print_last_digit(int dig)
+int print_last_digit(int num)
 {
-	int num;
+	int nume;
 
-	num = dig % 10;
+	nume = num % 10;
 
-	if (dig < 0)
+	if (num < 0)
+
 		num *= -1;
-    		_putchar('0' + num);
+	_putchar ('0' + nume);
 
-	return (num);
+	return (nume);
 }
