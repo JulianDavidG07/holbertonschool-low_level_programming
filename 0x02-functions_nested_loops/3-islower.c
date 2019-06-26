@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - _islower
- *
- * Return: 1, 0
+ * _islower - function to return
+ * @c: variable
+ * Return: 1, 0 for success
  */
 int _islower(int c)
 {
