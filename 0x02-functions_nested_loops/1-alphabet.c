@@ -1,13 +1,14 @@
 #include "holberton.h"
 /**
  * print_alphabet - alphabet list
- * @letter: variable
+ * @lt: variable
  * Return: chars
  */
-void print_alphabet(void)
+void print_alphabet(void lt)
 {
-int letter;
-for (letter = 97; letter <= 122; letter++)
-_putchar (letter);
-_putchar (10);
+	int lt;
+
+	for (lt = 97; lt <= 122; lt++)
+		_putchar (lt);
+	_putchar (10);
 }
