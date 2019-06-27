@@ -1,19 +1,16 @@
 #include "holberton.h"
 /**
- * print_numbers - function that multiplies two integers.
+ * print_numbers - print since 1 to 9
  *
- * Return: 0 sucess
+ * Return: 0 to success
  */
-
 void print_numbers(void)
-
 {
-	int m = 9;
+	int n;
 
-	while (m <= k)
+	for (n = '0'; n <= '9'; n++)
 	{
-		_putchar (m + '0');
-	m++;
+		_putchar(n);
 	}
-	_putchar ('\n');
+	_putchar(10);
 }
