@@ -1,17 +1,25 @@
 #include "holberton.h"
+
 /**
- * jack_bauer - print every minute of the day of Jack Bauer
- * @num: variable
- * Return: time day
+ * jack_bauer - minute of the day
+ * @hour @min : variables
+ * Return: minutes of day
  */
+
 void jack_bauer(void)
 {
-	int num = 30;
+	int hour, min;
 
-	while (num <= 39)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		_putchar(num + '0');
-		num++;
+		for (min = 0; min <= 59; min++)
+		{
+			_putchar(hour / 10 + '0');
+			_putchar(hour % 10 + '0');
+			_putchar(':');
+			_putchar(min / 10 + '0');
+			_putchar(min % 10 + '0');
+			_putchar('\n');
+		}
 	}
-
 }
