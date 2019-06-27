@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _isupper - function that checks for a digit (0 through 9).
+ * _isdigit - function that checks for a digit (0 through 9).
  * @c: variable
  * Return: 1 if uppercase, else 0
  */
