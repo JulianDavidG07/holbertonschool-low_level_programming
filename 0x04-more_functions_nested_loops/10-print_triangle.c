@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
  * print_triangle - function that prints a triangle, followed by a new line
- *
+ * @size: the size of the triangle
  * Return: 0 success
  */
+
 void print_triangle(int size)
 {
 	int vert, hor, space;
