@@ -9,6 +9,10 @@ void print_triangle(int size)
 {
 	int vert, hor, space;
 
+	if (size <= 0)
+	{
+		_putchar(10);
+	}
 
 	for (vert = 0; vert < size; vert++)
 	{
