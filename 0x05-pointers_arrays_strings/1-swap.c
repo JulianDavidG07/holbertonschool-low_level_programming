@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * void swap_int - function that swaps the values of two integers.
+ * swap_int - function that swaps the values of two integers.
  * @a: poiner 1
  * @b: pointer 2
- * Return:
+ * Return: values
  */
 
 void swap_int(int *a, int *b)
