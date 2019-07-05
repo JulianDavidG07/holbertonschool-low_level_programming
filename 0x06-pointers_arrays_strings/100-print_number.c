@@ -1,43 +1,35 @@
 #include "holberton.h"
-/**
- * print_number - function to print integers
- *
- * @n: int type
- * Return: return integer values
- */
 
+/**
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
+ */
 void print_number(int n)
 {
-	int a, remainder, length, count;
-	int m = n;
-	int pcounter = 0;
-	int power;
+	unsigned int m, d, count;
 
-	if (n == 0)
-	{
-		_putchar('0');
-	}
 	if (n < 0)
 	{
-		_putchar('-');
+		_putchar(45);
+		m = n * -1;
 	}
-	for (length = 0; n != 0; length++)
+	else
 	{
-		n /= 10;
+		m = n;
 	}
-	for (power = 1; pcounter < (length - 1); pcounter++)
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
 	{
-		power *= 10;
+		d /= 10;
+		count *= 10;
 	}
-	for (count = 0; count < length; count++)
+
+	for (; count >= 1; count /= 10)
 	{
-		a = m;
-		if (m < 0)
-			_putchar(((m / power) * -1) + '0');
-		else
-			_putchar((m / power) + '0');
-		remainder = a % power;
-		power /= 10;
-		m = remainder;
+		_putchar(((m / count) % 10) + 48);
 	}
 }
