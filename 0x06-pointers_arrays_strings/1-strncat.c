@@ -1,24 +1,33 @@
 #include "holberton.h"
+
 /**
  * _strncat - Write a function that concatenates two strings
- * @dest: string
- * @src: string
- * @n: integer
+ * @dest: The string that receives
+ * @src: The second string that receives
+ * @n: The number of char that prints
+ *
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
-
 {
-	int d = 0;
+	int i = 0, j = 0, m = 0;
 
-		while (*(dest + n))
-			n++;
-	while (*(src + d))
+	while (dest[i])
 	{
-		dest[n] = src[d];
-		d--;
-		n++;
+		i++;
 	}
-	dest[n] = 0;
+	while (src[m])
+	{
+		m++;
+	}
+	while (j < n)
+	{
+		if (j > m)
+			break;
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = 0;
 	return (dest);
 }

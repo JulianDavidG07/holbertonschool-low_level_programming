@@ -1,27 +1,25 @@
 #include "holberton.h"
+
 /**
- * _strcmp - int _strcmp(char *s1, char *s2)
- * @s1: char
- * @s2: char
- * Return: succes 0
+ * _strcmp - return length of a string
+ *
+ * @s1: char type
+ * @s2: char type
+ * Return: positive negative or zero
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int a = 0;
+	int a;
 
-	while (s1[a] != '\0')
+	for (a = 0; s1[a] != '\0'; a++)
+		;
+	for (a = 0; s2[a] != '\0'; a++)
 	{
-		return (s1[a] - s2[a]);
-	}
-	while (s2[a] != '\0')
-	{
-		return (s2[a] - s1[a]);
-	}
-
-	if (s1[a] != s2[a])
-	{
-		return (s1[a] - s2[a]);
+		if (s1[a] != s2[a])
+		{
+			return (s1[a] - s2[a]);
+		}
 	}
 	return (0);
 }
