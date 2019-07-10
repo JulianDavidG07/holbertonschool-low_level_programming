@@ -1,29 +1,32 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
- * main - sum the even  numbers  below
- * 4000000 in  fibobnachi sequence
- * Description: fibobnachi numbers starting from one
- * Return: 0
+ * main -  prints the sum of the even-valued terms
+ *
+ * Return: 0;
  */
 
 int main(void)
 {
-	long int f1  = 0;
-	long int f2  = 0;
-	long int f3 = 1;
-	long int sum = 0;
+	int a = 1;
+	int b = 2;
+	int c = 0;
+	int x = 2;
 
-	while (f2 < 4000000)
+	while (c < 4000000)
 	{
-		f2 = f1 + f3;
-		f1 = f3;
-		f3 = f2;
-		if (f2 % 2 == 0)
+		c = a + b;
+
+		if (c % 2 == 0)
 		{
-			sum  = sum  + f2;
+			x += c;
 		}
+
+		a = b;
+		b = c;
 	}
-	printf("%ld\n", sum);
+
+	printf("%i\n", x);
+
 	return (0);
 }
