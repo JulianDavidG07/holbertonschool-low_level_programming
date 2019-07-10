@@ -1,26 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - print largest prime
- *
- * description: find the largest divisible number
+ * main - prime factor of 612852475143
  * Return: 0
  */
 
 int main(void)
 {
-	long number;
-	long divisor;
+	long i;
+	long n = 612852475143;
 
-	number = 612852475143;
-
-	for (divisor = 2; divisor < number; divisor++)
+	for (i = 2; n > i; i++)
 	{
-		if (number % divisor == 0)
+		while (n % i == 0)
 		{
-			number /= divisor;
+			n = n / i;
 		}
 	}
-	printf("%ld\n", number);
+	printf("%ld\n", i);
 	return (0);
 }
