@@ -1,51 +1,66 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
 /**
- * _strlen - return length of a string
- * @s: char type
- * Return:  length of string
+ * _strdup - returns a pointer to a newly allocated space in memory,
+ * which contains a copy of the string given as a parameter.
+ * @str: char
+ * Return: pointer
  */
-int _strlen(char *s)
-{
-	int a;
 
-	for (a = 0; s[a] != '\0'; a++)
-	{
 
-	}
-	return (a);
-}
-
-/**
- * *_strdup - function to return pointer to string
- * @str: pointer to string array input
- * Return: pointer to string created
- */
 
 char *_strdup(char *str)
 {
-	char *ptr;
-	int size;
-	int x;
+	char *p;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	size = _strlen(str) + 1;
-	ptr = malloc(sizeof(char) * size);
 
-	x = 0;
-	while (x < size)
-	{
-		if (ptr == NULL)
-		{
-			return (NULL);
-		}
-		ptr[x] = str[x];
-		x++;
-	}
-	return (ptr);
+	p = malloc(_strlen(str) + 1);
+
+	if (p == NULL)
+		return (NULL);
+	_strcpy(p, str);
+	return (p);
+}
+
+
+
+
+
+/**
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte, to the
+ * buffer pointed to by dest.
+ * @dest: destination.
+ * @src: source.
+ * Return: dest.
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; *(src + i) != '\0'; i++)
+		dest[i] = src[i];
+
+	dest[i] = '\0';
+
+	return (dest);
+}
+/**
+ * _strlen - Write a function that returns the length of a string.
+ * @s: pointer char
+ * Return: nothing
+ */
+
+int _strlen(char *s)
+{
+	int c = 0;
+
+	while (*(s + c) != '\0')
+		c++;
+
+	return (c);
 }
