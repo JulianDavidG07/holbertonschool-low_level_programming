@@ -1,0 +1,18 @@
+CC = gcc
+
+SRC = main.c holberton.c
+
+FLAGS = -Wall -Werror -Wextra -pedantic
+
+all: $(SRC:%.c=%.o)
+	$(CC) $(FLAGS) $(SRC:%.c=%.o) -o holberton
+
+clean: $(SRC:%.c=%.o)
+	rm -f *~ holberton
+
+oclean:
+	rm -f $(SRC:%.c=%.o)
+
+fclean: clean oclean
+
+re: oclean all
