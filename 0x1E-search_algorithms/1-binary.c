@@ -1,4 +1,4 @@
-#include "search.h"
+#include "search_algos.h"
 /**
  * print_array - Function to print contents of array
  * @array: Pointer to array to be printed
